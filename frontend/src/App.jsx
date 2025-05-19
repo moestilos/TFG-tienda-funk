@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { Landing } from "./assets/landing";
 import Login from './components/Login';
 import Register from './components/Register';
+import Collection from './features/collections/components/Coleccion'
 
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
             <Route path="/register" element={<Register />} />
           </Routes>
         </div>
+        <Collection />
       </BrowserRouter>
 
   );
